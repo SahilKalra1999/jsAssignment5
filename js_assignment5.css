@@ -1,0 +1,73 @@
+body {margin: 0;}
+        
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+.anime1{
+   border: 2px solid black;
+   flex: 33.33%;
+   text-align: center;
+   padding: 5px;
+}
+#head1{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#btn1{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: white;
+    background-color: black;
+}
+.anime2{
+    flex: 33.33%;
+    border: 2px solid black;
+    padding: 5px;
+    
+}
+.row{
+    display: flex;
+    background-color: slategrey;
+}
+.anime3{
+    flex: 33.33%;
+    border: 2px solid black;
+    padding: 5px;
+}
+#hd1{
+    background-color: black;
+    color:white;
+}
+.c1{
+    margin: auto;
+    width: 300px;
+    border: 2px solid black;
+    margin-top: 10px;
+    text-align: center;
+}
