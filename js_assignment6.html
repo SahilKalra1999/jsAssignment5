@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    var val=0;
+var id=0;
+function startDart(){
+    id=setInterval(rotate,1);
+}
+
+function stopDart(){
+setTimeout(function(){clearInterval(id)},1000);
+}
+
+function rotate(){
+    val=val+1;
+     document.getElementById('imgR').style.webkitTransform="rotate("+val+"deg)";
+}
+
+</script>
+
+
+<body>
+    <div class="rotateImg">
+    <img src="dart1.png" width="300px" id="imgR" class="rotate linear infinit">
+    <button id="start" value="start" onclick="startDart()">Start</button>
+    <button id="stop" value="stop" onclick="stopDart()">Stop</button>
+</div>
+</body>
+</html>
